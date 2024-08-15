@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@import url('css/botao.css');
+@import url('css/menu-lateral.css');
+@import url('css/design-weaving.css');
+@import url('css/conteudo-principal.css');
+@import url('css/tools.css');
+@import url('css/rodape.css');
+
+
+/* PAGINA DE PROJECTS*/
+@import url('css/projects-principal.css');
+
+/*PAGINA DE ARTICLES*/
+@import url('css/articles-principal.css');
+@import url('css/articles-latest.css');
+
+:root{
+    --font-principal: "Manrope", sans-serif;
+
+    --black: #121212;
+    --base-grey: #595959;
+    --light-grey: #DEDEDE;
+    --more-light-grey: #EBEBEB;
+    --more-more-light-grey: #F5F5F5;
+    --white: #fff;
+
+}
+
+body{
+    background-color: var(--black);
+    background-image: url('/dist/public/imgs/img/Pattern\ BG.svg');
+    background-repeat:round ;
+    font-family: var(--font-principal);
+    display: flex;
+    color: var(--white);
+}
+
+.error{
+    margin-top: 10rem;
+    font-family: var(--font-principal);
+    font-size: 3rem;
+    font-weight: 700;
+}

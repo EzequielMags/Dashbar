@@ -1,0 +1,38 @@
+@keyframes animacao {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.botao__retorno{
+    position: fixed;
+    bottom: 7rem;
+    left: 7rem;
+
+    background-color: var(--more-light-grey);
+    border: 2px solid var(--more-light-grey);
+    border-radius: 10rem;
+    padding: 1rem 1.5rem;
+    animation: animacao 1s ease-in-out forwards;
+    cursor: pointer;
+}
+
+.botao__retorno:hover{
+    transition: 1s ease-in-out;
+    background-color: transparent;
+    color: var(--more-light-grey);
+}
+
+.retorno-icon{
+    font-size: 5rem;
+}
+
+@media screen and (max-width: 1200px){
+    .botao__retorno{
+        display: none;
+    }
+}

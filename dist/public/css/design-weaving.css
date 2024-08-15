@@ -1,0 +1,111 @@
+.principal{
+    margin-left: 4rem;
+    width: 100%;
+}
+
+.weaving-design{
+    width: 100%;
+}
+
+.hidden{
+    display: none;
+}
+
+.design-nome{
+    color: var(--white);
+    font-family: var(--font-principal);
+    font-size: 1.8rem;
+    padding: 2rem 0;
+}
+
+.design-titulo{
+    color: var(--white);
+    font-family: var(--font-principal);
+    font-size: 3.8rem;
+    font-weight: 600;
+}
+
+.weaving-design ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.weaving-design ul img {
+    margin-top: 2rem;
+}
+
+.design-imagem-tablet{
+    display: none;
+}
+
+@media screen and (min-width: 720px){
+    
+    .design-imagem-celular{
+        display: none;
+        
+    }
+    
+    .design-imagem-tablet{
+        display: block;
+
+    }
+
+    .design-nome{
+        font-size: 3rem;
+        margin-left: 5rem;
+    }
+
+    .design-titulo{
+        font-size: 5rem;
+        margin-left: 5rem;
+    }
+
+    .weaving-design ul{
+        margin: 5rem auto;
+        width: 75%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        'design-1 design-1 design-2'
+        'design-3 design-4 design-4';
+        gap: 2rem;
+    }
+
+    .design-1{
+        grid-area: design-1;
+        width: 100%;
+    }
+    
+    .design-2{
+        grid-area: design-2;
+        width: 100%;
+    }
+
+    .design-3{
+        grid-area: design-3;
+        width: 100%;
+    }
+
+    .design-4{
+        grid-area: design-4;
+        width: 100%;
+    }
+    
+}
+
+@media screen and (min-width: 1200px){
+    .design-nome{
+        font-size: 3rem;
+        margin-left: 15rem;
+    }
+
+    .design-titulo{
+        font-size: 6rem;
+        margin-left: 15rem;
+    }
+
+    .design-3{
+        width: 94%;
+    }
+}

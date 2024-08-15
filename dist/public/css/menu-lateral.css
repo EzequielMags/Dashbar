@@ -1,0 +1,226 @@
+@keyframes ativo {
+    0%{
+        width: 15%;
+    }    
+
+    100%{
+        width: 60%;
+    }
+}
+
+@keyframes esconder {
+    0%{
+        width: 60%;
+    }
+
+    100%{
+        width: 15%;
+    }
+}
+
+.ativo{
+    animation: ativo 1s ease-in-out forwards;
+}
+
+.esconder{
+    animation: esconder 1s ease-in-out forwards;
+}
+
+@keyframes ativo-conteudo {
+    0%{
+        position: absolute;
+        left:-1000px;
+        top: 200px;
+    }
+
+    100%{        
+        position: absolute;
+        left: 30px;
+        top: 200px;
+    }
+}
+
+@keyframes esconder-conteudo {
+    
+    0%{          
+        position: absolute;
+        left: 10px;
+        top: 200px;
+    }
+    
+    100%{
+        position: absolute;
+        left:-1000px;
+        top: 200px;
+    }
+}
+
+.ativo-conteudo{
+    animation: ativo-conteudo 1s ease-in-out forwards
+}
+
+.esconder-conteudo{
+    animation: esconder-conteudo 1s ease-in-out forwards
+}
+
+.menu-lateral{
+    background-color: #292929;
+    width: 14%;
+    height: 80vh;
+    border-radius: 0 0 .4rem 0;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    padding: 2rem 0 1rem 0;
+}
+
+.active{
+    border: 2px solid var(--more-light-grey);
+    border-radius: .4rem;
+    padding: 1rem 5rem 1rem 0rem;
+    background-color: var(--more-light-grey);
+    color: var(--black);
+}
+
+.menu-lateral__lista-celular{
+    display: flex;
+    flex-direction: column;
+    gap: 2.2rem;
+    color: var(--white);
+    margin-top: 3rem;
+}
+
+.menu-lateral__titulo-celular{
+    font-family: var(--font-principal);
+}
+
+.menu-lateral__item-celular{
+    display: flex;
+    column-gap: 1rem;
+    cursor: pointer;
+}
+
+.menu-lateral__item-celular h3{
+    font-family: var(--font-principal);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.menu-lateral__item-celular i{
+    font-size: 1.2rem;
+}
+
+
+.hidden{
+    display: block;
+}
+
+
+.menu-lateral__lista{
+    display: none;
+    
+}
+.menu-hamburguer__lateral{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.menu-lateral__menu{
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+@media screen and (min-width: 720px){
+
+    .ativo{
+        display: none;
+    }
+
+    .menu-lateral__hamburguer{
+        display: none;
+    }
+    .menu-lateral{
+        width: 100%;
+        height: 100vh;
+        align-items: start;
+        padding-left: 1rem;
+        
+        border-right: 4px solid var(--more-light-grey);
+    }
+    .menu-lateral__menu{
+        display: none;
+    }
+    
+    .menu-lateral__lista-celular{
+        display: none;
+    }
+    
+    .menu-lateral__lista{
+        
+        display: flex;
+        flex-direction: column;
+        gap: 2.2rem;
+        color: var(--white);
+        margin-top: 3rem;
+    }
+
+    .menu-lateral__titulo{
+        font-family: var(--font-principal);
+    }
+
+    
+    .menu-lateral__item{
+        display: flex;
+        align-items: center;
+        column-gap: 1rem;
+        border: 2px solid transparent;
+        border-radius: .4rem 0 0 .4rem;
+        padding: 1rem  1rem;
+        padding-right: 97%;
+    }
+    .menu-lateral__item:hover{
+        border: 2px solid var(--more-light-grey);
+        border-radius: .4rem 0 0 .4rem;
+        background-color: var(--more-light-grey);
+        color: var(--black);
+    }
+
+    .menu-lateral__item h3{
+        font-size: 1.3rem;
+        font-family: var(--font-principal);
+        font-weight: 600;
+    }
+
+    .item__products{
+        display: flex;
+        column-gap: 1rem;
+    }
+
+    .menu-lateral__item i{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .menu-lateral{
+        width: 15%;
+        height: 150vh;
+    }
+
+    .menu-lateral__lista{
+        width: 100%;
+    }
+    
+    .menu-lateral__item{
+        display: flex;
+        align-items: center;
+        column-gap: 1rem;
+        border: 2px solid transparent;
+        padding: 1rem  0 1rem 1rem;
+        padding-right: 80%;
+    }
+
+    
+}
